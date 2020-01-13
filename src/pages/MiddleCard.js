@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Row, Col, Card, Icon, CardTitle} from 'react-materialize';
+import {Row, Col, Card, CardTitle} from 'react-materialize';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
 class MiddleCard extends Component {
@@ -14,26 +14,71 @@ class MiddleCard extends Component {
 
     render() {
         return (
-            <Row>
-                <Col
-                    m={6}
-                    s={12}
-                >
-                    <ScrollableAnchor id={"middle"}>
-                        <Card
-                            actions={[
-                                <a key="1" onClick={this.componentDidMount()} href="#">Back To Top</a>
-                            ]}
 
-                            header={<CardTitle image="/img/fractal1.png">Card Title</CardTitle>}
-                        >
-                            Cupcake ipsum dolor.
-                            Sit amet cotton candy pie caramels carrot cake sesame snaps marshmallow.
-                            Macaroon chocolate bar oat cake.
-                        </Card>
+                    <ScrollableAnchor id={"middle"}>
+                        <div className="card-row">
+                            <Card
+                                actions={[
+                                    <a key="1" onClick={this.componentDidMount()} href="#">Back To Top</a>
+                                ]}
+
+                                header={<CardTitle image="/img/fractal1.png"></CardTitle>}
+                            >
+                                Cupcake ipsum dolor.
+                                Sit amet cotton candy pie caramels carrot cake sesame snaps marshmallow.
+                                Macaroon chocolate bar oat cake.
+                            </Card>
+
+                            <Card
+                                actions={[
+                                    <a key="1" onClick={this.componentDidMount()} href="#">Back To Top</a>
+                                ]}
+
+                                header={<CardTitle image="/img/fractal3.png"></CardTitle>}
+                            >
+                                Cupcake ipsum dolor.
+                                Sit amet cotton candy pie caramels carrot cake sesame snaps marshmallow.
+                                Macaroon chocolate bar oat cake.
+                            </Card>
+
+                            <Card
+                                actions={[
+                                    <a key="1" onClick={this.componentDidMount()} href="#">Back To Top</a>
+                                ]}
+
+                                header={<CardTitle image="/img/fractal6.png"></CardTitle>}
+                            >
+                                Cupcake ipsum dolor.
+                                Sit amet cotton candy pie caramels carrot cake sesame snaps marshmallow.
+                                Macaroon chocolate bar oat cake.
+                            </Card>
+
+                            <Card
+                                actions={[
+                                    <a key="1" onClick={this.componentDidMount()} href="#">Back To Top</a>
+                                ]}
+
+                                header={<CardTitle image="/img/fractal7.png"></CardTitle>}
+                            >
+                                Cupcake ipsum dolor.
+                                Sit amet cotton candy pie caramels carrot cake sesame snaps marshmallow.
+                                Macaroon chocolate bar oat cake.
+                            </Card>
+
+                            <Card
+                                actions={[
+                                    <a key="1" onClick={this.componentDidMount()} href="#">Back To Top</a>
+                                ]}
+
+                                header={<CardTitle image="/img/fractal10.png"></CardTitle>}
+                            >
+                                Cupcake ipsum dolor.
+                                Sit amet cotton candy pie caramels carrot cake sesame snaps marshmallow.
+                                Macaroon chocolate bar oat cake.
+                            </Card>
+                        </div>
                     </ScrollableAnchor>
-                </Col>
-            </Row>
+
         );
     }
 }

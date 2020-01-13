@@ -18,16 +18,43 @@ html, body, root {
 }
 
 /*Middle card styles */
+.card-row {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 25rem;
+    display: -webkit-box;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-gutter: always;
+    scrollbar-width: 10px;
+    scrollbar-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
 .card {
-    height: 90vh;
+    border: 2px solid #e7e7e7;
     width: 20rem;
+    height: 30rem;
+    padding: 1.5rem;
+    border-radius: 5rem;
+    box-shadow: -1rem 0 3rem #000;
+    transition: .2s;
+    display: -webkit-box;
+    display: flex;
+    margin: 0.1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
 }
 
 .card-image {
     height: 10rem;
     width: 10rem;
-
 }
+
 
 /* Carousel Styles */
 .carousel {
